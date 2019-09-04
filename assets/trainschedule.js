@@ -46,7 +46,6 @@ $(document).ready(function () {
     var snapDest = childSnapshot.val().Datadest;
     var snapFreq = childSnapshot.val().Datafrequency;
     var snapArrival = childSnapshot.val().DatafirstArrival;
-    var timeIs = moment();
     var firstArrivalConverted = moment(snapArrival, "HH:mm A").subtract(1, "years");
     var diff = moment().diff(moment(firstArrivalConverted), "minutes");
     var left = diff % snapFreq;
