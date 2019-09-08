@@ -7,6 +7,31 @@ var trainFirebaseData;
 var newFirebaseData;
 var time;
 var clock;
+
+var trainList = ["train2", "train3", "train1"]
+const Train1 = {
+  trainName: "rando trainer",
+  Destination: "travel Station",
+  TimeFirstTrain: "01:00",
+  Frequency: "5",
+}
+
+const train2 = {
+  trainName: "anyones choochoo",
+  Destination: "Satans lair",
+  TimeFirstTrain: "11:00",
+  Frequency: "33",
+}
+
+const train3 = {
+  trainName: "Sam and frodo",
+  Destination: "mordor",
+  TimeFirstTrain: "18:00",
+  Frequency: "55",
+}
+
+
+
 $(document).ready(function () {
   function runningClock() {
     time = moment().format("hh:mm:ss A");
